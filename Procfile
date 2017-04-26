@@ -1,1 +1,1 @@
-web: java -jar target/eTru-0.1-SNAPSHOT.jar
+web: java -jar target/eTru-0.1-SNAPSHOT.jar $PORT
