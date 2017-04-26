@@ -143,9 +143,19 @@ public class NewsServer extends AbstractHandler {
 
 			StringBuilder messageHTML = new StringBuilder();
 			
-			for (NewsMessage newsMessage : messages) {
-				newsMessage.appendHTML(messageHTML);
+			
+			if(messages.size() < 10) {
+				for (NewsMessage newsMessage : messages) {
+					newsMessage.appendHTML(messageHTML);
+				}
+			} else {
+				
+				for (int i = 0; i < 10; i++) {
+					messages.get(i).appendHTML(messageHTML);
+				}
 			}
+			
+			
 			html.println(messageHTML);
 			html.println("</div>");
 
@@ -171,8 +181,20 @@ public class NewsServer extends AbstractHandler {
     // if for some reason, we have multiple "message" fields in our form, just put a space between them, see Util.join.
     // Note that message comes from the name="message" parameter in our <input> elements on our form.
     String headline = Util.join(parameterMap.get("headline"));
+    String headlineParam = req.getParameter("headline");
 
-    if(headline != null) {
+    System.out.println("headline: " + headline);
+    if(headlineParam.equals("")) {
+    	System.out.println("caught");
+    	
+    	 try (PrintWriter html = resp.getWriter()) {
+    		 view.displayInvalidPage(html, metaURL, headline, "");	
+    	 }
+    	
+    }
+    
+    else if ( headline != null || headline != "" || headline != " ") {
+    	System.out.println("We're going in");
       String uri = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getRequestURI() + "?" + req.getQueryString();
       // Good, got new message from form.
       resp.setStatus(HttpServletResponse.SC_ACCEPTED);

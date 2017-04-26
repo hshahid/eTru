@@ -86,4 +86,14 @@ public void setMessageHeadline(String messageHeadline) {
   public int compareTo(@Nonnull NewsMessage o) {
     return -Long.compare(timeStamp, o.timeStamp);
   }
+
+public long getTimeStamp() {
+	return timeStamp;
+}
+
+public void setTimeStamp(long timeStamp) {
+	this.timeStamp = timeStamp;
+}
+  
+  
 }

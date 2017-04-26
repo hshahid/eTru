@@ -86,8 +86,13 @@ public class View {
         html.println("<div class=\"infoContainer\">");
         html.println("<div class=\"infotext\">");
         
-        html.println("<p> This is some fake ass shit. </p>");
-        
+        html.println("<p> This is the real fake new. Educate yourself through some credible news sources. Here are some listed below: </p>");
+        html.println("<p> </p>");
+        //cnn
+        //bbc
+        //nytimes
+        //abcnews
+        //
         html.println("</div>");
         
         html.println("<div class=\"video\">");
@@ -103,5 +108,22 @@ public class View {
 
         printNewsPageEnd(html, URL);
 	  }
+	  
+	  public void displayInvalidPage(PrintWriter html, String metaURL, String headline, String URL) {
+		  printNewsPageStart(html, "News: Submitted!", metaURL);
+			html.println("    <div class=\"latest\">"+"This is invalid. Your life is invalid. Bad!"+"</div>");
+
+	        // Thank you, link.
+	        //html.println("<div class=\"body\">");
+	        html.println("<div class=\"thanks\">");
+	        html.println("<title>"+"Enter a valid headline."+"</title>");
+	        html.println("</div>");
+	        
+	        html.println("Enter a valid headline.");
+	        printNewsForm(html);
+		  
+		  printNewsPageEnd(html, URL);
+	  }
+	  
 	
 }
