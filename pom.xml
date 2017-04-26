@@ -5,13 +5,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>edu.mtholyoke.cs341bd</groupId>
-  <artifactId>bookz</artifactId>
+  <artifactId>eTru</artifactId>
   <version>0.1-SNAPSHOT</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <javaVersion>1.8</javaVersion>
-    <mainClass>edu.mtholyoke.cs341bd.bookz.Main</mainClass>
+    <mainClass>Main</mainClass>
   </properties>
 
   <dependencies>
@@ -19,6 +19,12 @@
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>jsr305</artifactId>
       <version>3.0.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.j256.ormlite</groupId>
+      <artifactId>ormlite-jdbc</artifactId>
+      <version>5.0</version>
     </dependency>
 
     <dependency>
@@ -31,6 +37,18 @@
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
       <version>1.10.2</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.195</version>
+    </dependency>
+           
+    <dependency>
+      <groupId>postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.0-801.jdbc4</version>
     </dependency>
 
     <dependency>
@@ -49,6 +67,7 @@
   </dependencies>
 
   <build>
+    <sourceDirectory>src</sourceDirectory>
     <plugins>
       <!-- build a jar with relative classpath -->
       <plugin>
