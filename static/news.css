@@ -1,0 +1,155 @@
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.body{
+    margin:40px auto;
+    max-width:600pt;
+    line-height:1.6;
+    font-size:18px;
+    padding:0 10px;
+}
+h1,h2,h3{
+    line-height:1.2;
+    color: rgb(0,87,115)
+}
+a {
+    color: rgb(0,87,115)
+}
+div.headline{
+    line-height:1.2;
+    font-size: 30px;
+    color: #fff;
+    background-color: #183a52;
+    padding: .1em .5em;
+}
+div.bar{
+    color:#ababab;
+    margin: 0 7em 0em 7em;
+    background-color: black;
+}
+
+p.barText {
+    margin: 0 0;
+    text-align: center;
+    padding: .2em .2em;
+    word-spacing: 1em;
+}
+
+div.form {
+    text-align: center;
+    font-size: 2em;
+    flex-grow: 2;
+}
+div.message {
+    border: solid 1px #ccc;
+    margin: 1em 1em;
+    padding: .5em .5em;
+    background-color: #183a52;
+    font-color: #000;
+}
+
+div.latest {
+    font-size: 2em;
+    border-style: solid;
+    border-width: 0 0 .1em 0;
+    border-color: red;
+}
+
+div.messages {
+    margin: 1em 1em;
+}
+
+span.datetime {
+    margin-right: 10pt;
+    color: #fff;
+}
+
+span.newsHeadline {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+div.share {
+    text-align: center;
+}
+
+.thanks {
+    margin: 3pt;
+    padding: 3pt;
+}
+h1.logo {
+    color: #fff;
+    font-size: 7em;
+    text-align: center;
+    margin: 0 1em .25em 1em;
+    background-color: #183a52;
+}
+
+
+form.search-container{
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+}
+
+div.infoContainer {
+    display: flex;
+    flex-direction: row ;
+}
+
+div.infotext {
+    flex-grow: 1;
+}
+
+input#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    &:focus{
+        border: 1px solid #008ABF;
+        transition: 0.35s ease;
+        color: #008ABF;
+        &::-webkit-input-placeholder{
+            transition: opacity 0.45s ease; 
+            opacity: 0;
+        }
+        &::-moz-placeholder {
+            transition: opacity 0.45s ease; 
+            opacity: 0;
+        }
+        &:-ms-placeholder {
+            transition: opacity 0.45s ease; 
+            opacity: 0;
+        }    
+    }
+}
+
+.search-icon{
+    position: relative;
+    float: right;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    top: -62px;
+    right: -45px;
+}
+
+div.video {
+    text-align: center;
+}
+
+div.link {
+    background-color: #183a52;
+    margin: .7em 0em;
+    padding: .5em .5em;
+}
+
