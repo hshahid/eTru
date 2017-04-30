@@ -43,7 +43,8 @@ public class View {
 	    html.println("    "+metaURL);
 	    html.println("    <link type=\"text/css\" rel=\"stylesheet\" href=\""+getStaticURL("news.css")+"\">");
 	    html.println("    <meta name=\"description\" content=\"Your Freshest Source on the World’s Latest News\"/>");
-	    html.println("    <meta property=\"image\" content=\"../static/logo.jpg\"/>");
+	    html.println("    <meta property=\"image\" src=\"../static/logo.jpg\"/>");
+        
 	    html.println("  </head>");
 	    html.println("  <body>");
 	    html.println("<div class=\"bar\">");
@@ -51,6 +52,8 @@ public class View {
         html.println("</div>");
 	    html.println("  <a href =\"\"> <h1 class=\"logo\">SNS News</h1> </a> ");
 	  }
+    
+   
 	  /**
 	   * HTML bottom boilerplate; close all the tags we open in printNewsPageStart.
 	   * @param html where to write to; get this from the HTTP response.
