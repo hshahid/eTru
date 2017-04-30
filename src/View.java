@@ -42,7 +42,7 @@ public class View {
 	    html.println("    <title>"+title+"</title>");
 	    html.println("    "+metaURL);
 	    html.println("    <link type=\"text/css\" rel=\"stylesheet\" href=\""+getStaticURL("news.css")+"\">");
-	    html.println("    <meta name=\"description\" content=\"SnS News: Your Freshest Source on the World’s Latest News\"/>");
+	    html.println("    <meta name=\"description\" content=\"Your Freshest Source on the World’s Latest News\"/>");
 	    html.println("    <meta property=\"image\" content=\"../static/logo.jpg\"/>");
 	    html.println("  </head>");
 	    html.println("  <body>");
@@ -74,7 +74,7 @@ public class View {
 	  }
 	  
 	  public void displayFakeNewsPage(PrintWriter html, String metaURL, String headline, String URL) {
-		printNewsPageStart(html, "News: Submitted!", metaURL);
+		printNewsPageStart(html, "SnS News", metaURL);
 		html.println("    <div class=\"latest\">"+headline+"</div>");
 
         // Thank you, link.
@@ -110,7 +110,7 @@ public class View {
 	  }
 	  
 	  public void displayInvalidPage(PrintWriter html, String metaURL, String headline, String URL) {
-		  printNewsPageStart(html, "News: Submitted!", metaURL);
+		  printNewsPageStart(html, "SnS News", metaURL);
 			html.println("    <div class=\"latest\">"+"This is invalid. Your life is invalid. Bad!"+"</div>");
 
 	        // Thank you, link.
