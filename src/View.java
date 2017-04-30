@@ -91,10 +91,10 @@ public class View {
         
         html.println("<p> This is the real fake new. Educate yourself through some credible news sources. Here are some listed below: </p>");
         html.println("<p> </p>");
-        html.println("<a href=\"http://www.cnn.com\" style=\"color:red\">CNN</a>");
-          html.println("<a href=\"http://www.nytimes.com\"style=\"color:red\">New York Times</a>");
-          html.println("<a href=\"http://www.abcnews.com\"style=\"color:red\">ABC News</a>");
-          html.println("<a href=\"http://www.theonion.com\"style=\"color:red\">The Onion (jk)</a>");
+        html.println("<a href=\"http://www.cnn.com\" style=\"color:red\">CNN</a><br>");
+          html.println("<a href=\"http://www.nytimes.com\"style=\"color:red\">New York Times</a><br>");
+          html.println("<a href=\"http://www.abcnews.com\"style=\"color:red\">ABC News</a><br>");
+          html.println("<a href=\"http://www.theonion.com\"style=\"color:red\">The Onion (jk)</a><br>");
        
         html.println("</div>");
         
