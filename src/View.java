@@ -50,7 +50,7 @@ public class View {
 	    html.println("<div class=\"bar\">");
 	    html.println("  <p class=\"barText\">SnSNews  SnSBusiness   SnSSports  SnSHealth</p>");
         html.println("</div>");
-	    html.println("  <a href =\"\"> <h1 class=\"logo\">SNS News</h1> </a> ");
+	    html.println("  <a href =\"\"> <h1 class=\"logo\">SNS New</h1> </a> ");
 	  }
     
    
