@@ -17,6 +17,10 @@ h1,h2,h3{
 a {
     color: rgb(0,87,115)
 }
+a.black {
+    color: #fff;
+}
+
 div.headline{
     line-height:1.2;
     font-size: 30px;
