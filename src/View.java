@@ -43,7 +43,7 @@ public class View {
 	    html.println("    "+metaURL);
 	    html.println("    <link type=\"text/css\" rel=\"stylesheet\" href=\""+getStaticURL("news.css")+"\">");
 	    html.println("    <meta name=\"description\" content=\"Your Freshest Source on the World’s Latest News\"/>");
-	    html.println("    <meta property=\"image\" src=\"../static/logo.jpg\"/>");
+	    html.println("    <meta property=\"og:image\" content=\"../static/logo.jpg\"/>");
         
 	    html.println("  </head>");
 	    html.println("  <body>");
